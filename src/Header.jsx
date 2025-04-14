@@ -10,7 +10,7 @@ function Header() {
         boxShadow: "none",
       }}
     >
-      <Toolbar sx={{ justifyContent: "space-between" }}>
+      <Toolbar sx={{ justifyContent: "space-between" }} disableGutters>
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <Typography variant="h6" sx={{ fontWeight: "bold", color: "#333" }}>
             Great Range Innovations
