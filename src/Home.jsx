@@ -11,41 +11,59 @@ import {
 
 const services = [
   {
-    title: "WEB DESIGN & DEVELOPMENT",
+    title: "Web Design & Development",
     image: "https://placehold.co/300x200?text=Web+Design+%26+Development",
   },
   {
-    title: "APP DESIGN & DEVELOPMENT",
+    title: "App Design & Development",
     image: "https://placehold.co/300x200?text=App+Design+%26+Development",
   },
   {
-    title: "USER EXPERIENCE (UX) DESIGN",
+    title: "User Experience (UX) Design",
     image: "https://placehold.co/300x200?text=UX+Design",
   },
   {
-    title: "CUSTOM SOLUTIONS",
+    title: "Custom Solutions",
     image: "https://placehold.co/300x200?text=Custom+Solutions",
   },
 ];
 
 export default function Home() {
   return (
-    <Box sx={{ maxWidth: "1200px", margin: "0 auto", pt: 10 }}>
+    <Box
+      sx={{
+        maxWidth: "1200px",
+        margin: "0 auto",
+        pt: { md: 10 },
+        px: 2,
+      }}
+    >
       <Grid container spacing={4}>
         {/* LEFT TEXT */}
-        {/* LEFT TEXT */}
-        <Grid size={{ xs: 12, md: 5 }} sx={{ pt: 8, pr: 8 }}>
+        <Grid
+          size={{ xs: 12, md: 5 }}
+          sx={{
+            pt: { xs: 6, md: 8 },
+            pr: { md: 8 },
+            textAlign: { xs: "center", md: "left" },
+          }}
+        >
           <Typography variant="h4" gutterBottom>
-            WE HAVE A GREAT RANGE OF EXPERTISE.
+            Expertly Built.
+          </Typography>
+          <Typography variant="h4" gutterBottom fontWeight={600}>
+            Boldly Delivered.
+          </Typography>
+
+          <Typography variant="body2" sx={{ lineHeight: 1.8, pb: 2 }}>
+            At <b>Great Range Innovations</b>, our name speaks for itself. We
+            fuse design and engineering to create modern websites and
+            applications that move fast, scale effortlessly, and look sharp
+            doing it.
           </Typography>
           <Typography variant="body2" sx={{ lineHeight: 1.8, pb: 2 }}>
-            Our name says it all. We thrive at the intersection of creativity
-            and capability, crafting websites and web applications that are
-            fast, modern, and built to scale with your business.
-          </Typography>
-          <Typography variant="body2" sx={{ lineHeight: 1.8, pb: 2 }}>
-            From sleek portfolios to powerful custom platforms, we help you show
-            up online with clarity and confidence.
+            Whether you're launching a lean portfolio or a full-scale platform,
+            we bring clarity, capability, and creativity to every click.
           </Typography>
           <Button variant="outlined" sx={{ mt: 2, borderRadius: 0 }}>
             LET'S CHAT
@@ -56,7 +74,7 @@ export default function Home() {
         <Grid size={{ xs: 12, md: 7 }}>
           <Grid container spacing={2}>
             {services.map((item) => (
-              <Grid size={6} key={item.title} sx={{ px: 2 }}>
+              <Grid item size={{ xs: 12, sm: 6 }} key={item.title}>
                 <Card elevation={0}>
                   <CardMedia
                     component="img"
@@ -73,7 +91,6 @@ export default function Home() {
                       variant="subtitle2"
                       fontWeight="bold"
                       textAlign="center"
-                      textTransform="uppercase"
                     >
                       {item.title}
                     </Typography>
