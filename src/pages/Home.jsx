@@ -74,7 +74,7 @@ export default function Home() {
         <Grid size={{ xs: 12, md: 7 }}>
           <Grid container spacing={2}>
             {services.map((item) => (
-              <Grid item size={{ xs: 12, sm: 6 }} key={item.title}>
+              <Grid size={{ xs: 12, sm: 6 }} key={item.title}>
                 <Card elevation={0}>
                   <CardMedia
                     component="img"
