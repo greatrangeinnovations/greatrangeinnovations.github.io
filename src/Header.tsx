@@ -119,20 +119,20 @@ function Header() {
                         </ListItem>
                       ))}
                       <ListItem disablePadding>
-                        <ListItemButton>
-                          <Button
-                            variant="outlined"
-                            fullWidth
-                            sx={{
-                              borderRadius: 0,
-                              mt: 2,
-                              color: "#333",
-                              border: "1px solid #333",
-                            }}
-                          >
-                            Hire Us
-                          </Button>
-                        </ListItemButton>
+                        <Button
+                          variant="outlined"
+                          fullWidth
+                          sx={{
+                            borderRadius: 0,
+                            mt: 2,
+                            mx: 2,
+                            color: "#333",
+                            border: "1px solid #333",
+                            width: "100%",
+                          }}
+                        >
+                          Hire Us
+                        </Button>
                       </ListItem>
                     </List>
                   </Box>
