@@ -65,7 +65,17 @@ export default function Home() {
             Whether you're launching a lean portfolio or a full-scale platform,
             we bring clarity, capability, and creativity to every click.
           </Typography>
-          <Button variant="outlined" sx={{ mt: 2, borderRadius: 0 }}>
+          <Button
+            variant="contained"
+            sx={{
+              backgroundColor: "#fff",
+              borderRadius: 0,
+              padding: "8px 48px",
+              color: "#333",
+              border: "1px solid #333",
+              boxShadow: "none",
+            }}
+          >
             LET'S CHAT
           </Button>
         </Grid>
